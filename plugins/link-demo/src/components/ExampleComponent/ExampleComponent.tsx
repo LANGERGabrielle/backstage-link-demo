@@ -22,7 +22,7 @@ export const ExampleComponent = () => {
           <Grid item>
             <InfoCard title="Information card">
               <Typography variant="body1">
-                {entity.kind === 'Component' ? groupRoute() : 'Team component'}
+                {entity.kind === 'Component' ? `This should be the link to the tab in the group entity : ${groupRoute()}` : 'Team component'}
               </Typography>
             </InfoCard>
           </Grid>
